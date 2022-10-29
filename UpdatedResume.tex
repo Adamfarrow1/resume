@@ -1,0 +1,150 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\normalsize{
+    \textbf{#1}{: #2 \vspace{1pt}}
+  }
+}
+
+\newcommand{\extraNote}[1]{
+    \item\small{}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\normalsize{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \large\textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+    %HEADING
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{{\LARGE Adam Farrow}} & Email: \href{mailto:}{Adamfarrow1@gmail.com}\\
+      \href%{INSERT PORTFOLIO URL HERE}{Portfolio: currently being developed}
+      & Mobile:~~~407 341 4243 \\
+      \href{https://github.com/AdamFarrow}{Github: ~~github.com/Adamfarrow1} \\
+    \end{tabular*}
+    
+    %EDUCATION
+    \section{Education}
+        \resumeSubHeadingListStart
+            \resumeSubheading{University of Central Florida}{Orlando, Florida}
+                {Bachelors of Science - Computer Science}{August 2020 - Current}
+            \resumeItemListStart
+                \resumeItem{Major GPA}{3.348}
+                \resumeItem{Cumulative GPA}{3.328}
+            \resumeItemListEnd
+            {\scriptsize \textit{ \normalsize{\textbf{Relevant subjects:} Data structures and algorithms, System Software, Security in Computing,
+            Object Oriented Programming, Discrete Structures}}}
+        \resumeSubHeadingListEnd
+    
+    
+    %SKILLS
+    \section{Skills}
+    	\resumeSubHeadingListStart
+        	\resumeSubItem{Languages (proficient)}{~~~~ Java, C, JavaScript, HTML, CSS, SCSS}
+        	\vspace{-8pt}
+        	\resumeSubItem{Languages (familiar)}{~~~~~~~~LaTeX}
+        	\vspace{-8pt}
+        	\resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Visual Studio Code, Git version-control, Junit5 (Unit testing), PlantUML}
+        	\vspace{-8pt}
+        	\resumeSubItem{Soft Skills}{~~~~~~~~~~~~~~~~~~~~~~~~Leadership, Communication, Work Ethic, Public Speaking, Time Management}
+      \resumeSubHeadingListEnd
+    
+    
+    %EXPERIENCE
+    \section{Experience and Leadership}
+        \resumeSubHeadingListStart
+            %Format similar to education
+            \resumeSubheading{ShellHacks Hackathon}{Miami, Florida}{Competitor}{2022}
+                \resumeItemListStart
+                    \resumeItem{Team Leader/Presenter}{Given different challenges from many different companies including Xbox, Microsoft, MITRE, and State Farm to name a few. Each project was presented and judges decided the winners of each project. Within the team we created they designated me as the leader/presenter of the project.}
+                \resumeItemListEnd
+          \resumeSubHeadingListEnd
+    
+    
+    %PROJECTS
+    \section{Projects}
+        \resumeSubHeadingListStart
+            \resumeSubItem{About me resume website}{A website hosted using GitHub pages that contains information about me. The purpose of the website is to give a visually appealing version of my resume.\\Tech: JavaScript, HTML, CSS. (September 2022)}
+            \resumeSubItem{To-do List}{The To-Do list is a desktop application using JavaFX. This application creates a list of things that need to be completed by a specified date. The app also contains features such as sorting, save/load, and completion status.  \\Tech: Java, JavaFX, PlantUML, Junit5. (October 2021)}
+            \resumeSubItem{Polls bot}{(Work in progress)Polls bot is a discord bot designed to create polls for users to vote on. The bot isnt fully complete as I want to add a reaction vote feature and host it on a server.\\Tech: Java, JDA API. (October 2022)}
+            \resumeSubItem{Storage app}{Desktop application used to store and manage inventory. Within this application you will need to input a name, serial number, and price for each item. Within the storage app you can search for specific items using serial number/name as well as sort it similar to the To-Do list. You can also choose to save the file as JSON, HTML, or TSV.  \\Tech: Java, JavaFX, PlantUML, Junit5. (November 2021)}
+            \resumeSubItem{Infinite StairMaster}{Infinite StairMaster is a game where you try to see how high you can climb with intentionally tricky controls. This website was created at the ShellHacks hackathon 2022. I helped design and create a queue represented by a linked list to find out which next move our player should make. \\Tech: JavaScript, HTML, CSS. (September 2022)}
+            \vspace{2pt}
+        \resumeSubHeadingListEnd
+    
+    
+    %AWARDS
+    \section{Honors and Awards}
+        \begin{description}[font=$\bullet$]
+            \item {Deans list spring 2021}
+            \item {48/50 on Data Structures section of Foundation Exam}
+        \end{description}
+        
+     %CLUBS
+    \section{Clubs/Extracurricular}
+        \begin{description}[font=$\bullet$]
+            \item {Knight Hacks club}
+            \item {BJJ (Brazilian Jiu Jitsu) club}
+        \end{description}
+        
+\end{document}
